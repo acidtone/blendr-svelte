@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte + Vite App</title>
+    <style>
+      :root {
+        --hue: 180;
+        --sat: 100%;
+        --lum: 50%;
+      }  
+      body {
+        margin: 0;
+        --primary-clr: hsl(var(--hue), var(--sat), var(--lum));
+        /* background-color: var(--primary-clr); */
+      }
+      div {
+        display: grid;
+        grid-template-columns: min-content min-content;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
